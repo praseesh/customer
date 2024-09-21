@@ -12,7 +12,6 @@ def addcustomer(request):
             if custform.is_valid():
                 custform.save()
         return render (request,'index.html', {'form':custform,"msg":"Customer Added"})
-    
     except Exception as e:
         print(e)
         return HttpResponse("Error")
