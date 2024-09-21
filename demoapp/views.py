@@ -3,7 +3,6 @@ from django.http import HttpResponse
 from .forms import CustomerForm
 # # Create your views here.
 
-
 def index(request):
     custform=CustomerForm()
     return  render(request,"index.html", {'form':custform})
