@@ -7,7 +7,6 @@ from .forms import CustomerForm
 def index(request):
     custform=CustomerForm()
     return  render(request,"index.html", {'form':custform})
-
 def addcustomer(request):
     try:
         if request.method=='POST':
